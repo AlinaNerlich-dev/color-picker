@@ -8,7 +8,6 @@ const Color_Palette = {
 '#201335':'Dark Purpel'
 }
 
-
 const select = document.getElementById("color-picker");
 
 for (const color in Color_Palette){
@@ -18,8 +17,7 @@ for (const color in Color_Palette){
 select.addEventListener("change", changeColor);
 
 function changeColor(){
-
-  const selectedColor = document.getElementById("color-picker")
+  const selectedColor = document.getElementById("color-picker");
   let colorName = document.getElementById("color-name");
   document.body.style.backgroundColor = selectedColor.value;
   colorName.innerText = selectedColor.options[selectedColor.selectedIndex].text;
