@@ -11,7 +11,7 @@ const ColorPalette = {
 const select = document.getElementById('color-picker');
 
 // eslint-disable-next-line no-return-assign
-Object.entries(ColorPalette).forEach((color) => select.innerHTML += `<option value=${color} id="color-option">${ColorPalette[color]}</option>`);
+Object.entries(ColorPalette).forEach((color) => select.innerHTML += `<option value=${color[0]} id="color-option">${color[1]}</option>`);
 
 function changeColor() {
   const selectedColor = document.getElementById('color-picker');
